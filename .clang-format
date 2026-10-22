@@ -1,0 +1,17 @@
+# Style for the whole code base: LLVM-derived, 4 spaces, 110 columns.
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 110
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+BreakBeforeBraces: Attach
+SortIncludes: Never
+ReflowComments: false
+PointerAlignment: Right
+AlignAfterOpenBracket: Align
+IndentCaseLabels: false
+SpaceBeforeParens: ControlStatements
+MaxEmptyLinesToKeep: 1

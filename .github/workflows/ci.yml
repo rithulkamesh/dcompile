@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-14   # Apple silicon
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: brew install ffmpeg pkg-config
+      - name: Build
+        run: make
+      - name: JIT self-test (needs no game files)
+        run: make test

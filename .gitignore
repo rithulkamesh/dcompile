@@ -1,0 +1,8 @@
+build/
+*.o
+*.ppm
+*.dSYM/
+.DS_Store
+# local scratch: logs, screenshots, decrypted binaries and other game-derived data must never be committed
+*.log
+dec/
